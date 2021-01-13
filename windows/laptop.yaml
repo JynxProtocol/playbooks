@@ -1,5 +1,5 @@
 ---
-- name: "Setup"
+- name: "Chocolatey"
   hosts: windows
   tasks:
     - name: Install chocolatey
@@ -65,8 +65,6 @@
       win_chocolatey:
         name: 7zip
         state: present
-    - name: Install GitHub Desktop 
-      win_chocolatey:    
         name: github-desktop
         state: present 
     - name: Install TeamViewer
@@ -104,5 +102,9 @@
     - name: Cmder
       win_chocolatey:
         name: cmder
+        state: present
+    - name: WinSCP
+      win_chocolatey:
+        name: winscp
         state: present
 

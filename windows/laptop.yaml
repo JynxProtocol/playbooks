@@ -83,10 +83,6 @@
       win_chocolatey:
         name: vlc
         state: present
-    - name: Install Open VPN
-      win_chocolatey:
-        name: openvpn
-        state: present
     - name: Install TeamViewer
       win_chocolatey:
         name: teamviewer

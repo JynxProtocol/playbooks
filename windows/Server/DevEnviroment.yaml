@@ -12,26 +12,21 @@
       win_chocolatey:
         name: vscode
         state: present
+    - name: Install Visual Studio
+      win_chocolatey:
+        name: visualstudio2019professional
+        state: present
     - name: Install Bootstrap Studio
         win_chocolatey:
         name: bootstrap-studio.install
         state: present
+    - name: Install GitHub Desktop
+        win_chocolatey:
+        name: github-desktop
+        state: present 
     - name: Install Adobe Reader
       win_chocolatey:
         name: adobereader
-        state: present
-    - name: Install GitHub Desktop
-      win_chocolatey:
-        name: github-desktop
-        state: present 
-    - name: Install Open VPN
-      win_chocolatey:
-        name: openvpn
-        state: present
-        state: present
-    - name: Install Visual Studio
-      win_chocolatey:
-        name: visualstudio2019professional
         state: present
     - name: Install 7Zip
       win_chocolatey:

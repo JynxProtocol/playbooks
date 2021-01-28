@@ -12,6 +12,14 @@
       win_chocolatey:
         name: dellcommandupdate
         state: present
+    - name: Install NVIDIA Managment
+      win_chocolatey:
+        name: geforce-experience
+        state: present
+    - name: Install NVIDIA Drivers
+      win_chocolatey:
+        name: geforce-game-ready-driver
+        state: present
     - name: Install Google Chrome
       win_chocolatey:
         name: googlechrome
@@ -21,7 +29,7 @@
       win_chocolatey:
         name: vscode
         state: present
-      - name: Install Visual Studio
+    - name: Install Visual Studio
       win_chocolatey:
         name: visualstudio2019professional
         state: present

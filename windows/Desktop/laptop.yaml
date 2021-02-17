@@ -81,5 +81,3 @@
       win_chocolatey:
         name: vscode-docker
         state: present
-    
-

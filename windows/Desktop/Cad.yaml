@@ -1,0 +1,68 @@
+- name: "Chocolatey"
+  hosts: CAD
+  tasks:
+    - name: Install chocolatey
+      win_chocolatey:
+          name:
+            - chocolatey
+            - chocolatey-core.extension
+
+    - name: Install .Net SDK
+      win_chocolatey:
+        name: dotnet-sdk
+        state: present
+
+    - name: Install Python
+      win_chocolatey:
+        name: python
+        state: prestent
+
+    - name: Install Visual Studio Code
+      win_chocolatey:
+        name: vscode
+        state: present
+
+    - name: Install VS Code C# Extension
+      win_chocolatey:
+        name: vscode-csharp
+        state: present
+
+    - name: Install VS Code Material Icon Extension
+      win_chocolatey:
+        name: materialicon-vscode
+        state: present
+
+    - name: Install Python VSCode Extension
+      win_chocolatey:
+        name: vscode-python
+        state: present
+
+    - name: Install Adobe Reader
+      win_chocolatey:
+        name: adobereader
+        state: present
+
+    - name: Install Draw.io
+      win_chocolatey:
+        name: drawio
+        state: present
+
+    - name: Install Office365
+      win_chocolatey:
+        name: office365business
+        state: present
+
+    - name: Install 7Zip
+      win_chocolatey:
+        name: 7zip
+        state: present
+
+    - name: Install Windows updates
+      win_updates:
+        category_names:
+         - SecurityUpdates
+         - CriticalUpdates
+         - UpdateRollups
+         - DefinitionUpdates 
+        reboot: yes
+

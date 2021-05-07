@@ -81,3 +81,11 @@
       win_chocolatey:
         name: vscode-docker
         state: present
+    - name: Install kubectl
+      win_chocolatey:
+        name: kubernetes-cli
+        state: present
+    - name: Install MiniKube
+      win_chocolatey:
+        name: minikube
+        state: present

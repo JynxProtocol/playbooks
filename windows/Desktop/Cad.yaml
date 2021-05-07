@@ -57,12 +57,10 @@
         name: 7zip
         state: present
 
-    - name: Install Windows updates
-      win_updates:
-        category_names:
-         - SecurityUpdates
-         - CriticalUpdates
-         - UpdateRollups
-         - DefinitionUpdates 
-        reboot: yes
+    - name: Install Paint.Net
+      win_chocolatey:
+        name: paint.net
+        state: present
+
+
 
